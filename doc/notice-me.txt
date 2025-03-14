@@ -1,0 +1,80 @@
+*notice-me.txt*  A plugin for Neovim
+
+==============================================================================
+CONTENTS                                                     *notice-me-contents*
+
+  1. Introduction ................. |notice-me-introduction|
+  2. Installation ................. |notice-me-installation|
+  3. Configuration ................ |notice-me-configuration|
+  4. Usage ........................ |notice-me-usage|
+  5. Commands ..................... |notice-me-commands|
+  6. API .......................... |notice-me-api|
+  7. License ...................... |notice-me-license|
+
+==============================================================================
+1. INTRODUCTION                                           *notice-me-introduction*
+
+A Neovim plugin for [brief description of what your plugin does].
+
+==============================================================================
+2. INSTALLATION                                           *notice-me-installation*
+
+Using packer.nvim:
+>
+  use {
+    'yourusername/notice-me',
+    config = function()
+      require('notice-me').setup({
+        -- your configuration goes here
+      })
+    end
+  }
+<
+
+Using lazy.nvim:
+>
+  {
+    'yourusername/notice-me',
+    config = function()
+      require('notice-me').setup({
+        -- your configuration goes here
+      })
+    end
+  }
+<
+
+==============================================================================
+3. CONFIGURATION                                         *notice-me-configuration*
+
+notice-me comes with the following defaults:
+>
+  {
+    enable = true,
+    -- Add more options as needed
+  }
+<
+
+==============================================================================
+4. USAGE                                                        *notice-me-usage*
+
+Describe how to use your plugin here.
+
+==============================================================================
+5. COMMANDS                                                  *notice-me-commands*
+
+:NoticeMe                                                          *:NoticeMe*
+        Example command that calls the example function.
+
+==============================================================================
+6. API                                                            *notice-me-api*
+
+require('notice-me').example_function()     *notice-me.example_function()*
+        Example function description.
+
+==============================================================================
+7. LICENSE                                                      *notice-me-license*
+
+MIT
+
+==============================================================================
+vim:tw=78:ts=8:ft=help:norl:
