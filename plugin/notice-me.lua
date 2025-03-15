@@ -3,14 +3,14 @@ if vim.g.loaded_notice_me then
 end
 vim.g.loaded_notice_me = true
 
--- Initialize the plugin
+-- Initialise notice-me
 require("notice-me").setup()
 
--- Create user commands
-vim.api.nvim_create_user_command("NoticeMe", function()
-  require("notice-me").example_function()
-end, { desc = "Example notice-me command" })
-
+-- Toggle the highlighting on and off
+--
+-- Enables or disables keyword highlighting across all buffers.
+-- When enabled, configured keywords will be highlighted with their
+-- respective styles. When disabled, all highlights will be cleared.
 vim.api.nvim_create_user_command("NoticeMeToggle", function()
   local notice_me = require("notice-me")
   notice_me.config.enable = not notice_me.config.enable
@@ -49,4 +49,3 @@ vim.api.nvim_create_user_command("NoticeMeRefresh", function()
   notice_me.highlight_keywords(bufnr)
   vim.notify("Refreshed keyword highlights")
 end, { desc = "Refresh notice-me keyword highlighting" })
-

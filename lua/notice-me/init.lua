@@ -114,10 +114,4 @@ function M.highlight_keywords(bufnr)
   end
 end
 
--- Example function implementation
-function M.example_function()
-  print("Notice-me plugin function called!")
-  print("Keywords being highlighted:", vim.inspect(vim.tbl_keys(M.config.keywords)))
-end
-
 return M
