@@ -3,6 +3,7 @@
         "describe",
         "before_each",
         "after_each",
-        "it"
+        "it",
+        "vim"
     ]
 }
