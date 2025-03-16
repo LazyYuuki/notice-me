@@ -45,7 +45,7 @@ function M.setup_autocmds()
         M.highlight_keywords(args.buf)
       end)
     end,
-    desc = "Notice-me highlight keywords on buffer events",
+    desc = "Notice_me highlight keywords on buffer events",
   })
 
   -- Apply on colorscheme change to ensure highlights are preserved
@@ -63,7 +63,7 @@ function M.setup_autocmds()
         end
       end
     end,
-    desc = "Notice-me re-apply highlights after colorscheme change",
+    desc = "Notice_me re-apply highlights after colorscheme change",
   })
 
   -- Also highlight current buffer immediately

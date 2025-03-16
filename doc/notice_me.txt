@@ -1,4 +1,4 @@
-*notice-me.txt*  A plugin for Neovim
+*notice_me.txt*  A plugin for Neovim
 
 ==============================================================================
 CONTENTS                                                     *notice-me-contents*
@@ -22,9 +22,9 @@ A Neovim plugin for [brief description of what your plugin does].
 Using packer.nvim:
 >
   use {
-    'yourusername/notice-me',
+    'LazyYuuki/notice_me',
     config = function()
-      require('notice-me').setup({
+      require('notice_me').setup({
         -- your configuration goes here
       })
     end
@@ -34,7 +34,7 @@ Using packer.nvim:
 Using lazy.nvim:
 >
   {
-    'yourusername/notice-me',
+    'LazyYuuki/notice_me',
     config = function()
       require('notice-me').setup({
         -- your configuration goes here
@@ -68,7 +68,7 @@ Describe how to use your plugin here.
 ==============================================================================
 6. API                                                            *notice-me-api*
 
-require('notice-me').example_function()     *notice-me.example_function()*
+require('notice_me').example_function()     *notice_me.example_function()*
         Example function description.
 
 ==============================================================================

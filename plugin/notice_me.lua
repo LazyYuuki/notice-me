@@ -4,7 +4,8 @@ end
 vim.g.loaded_notice_me = true
 
 -- Initialise notice-me
-require("notice-me").setup()
+require("notice_me").setup()
+
 
 -- Toggle the highlighting on and off
 --
@@ -12,7 +13,7 @@ require("notice-me").setup()
 -- When enabled, configured keywords will be highlighted with their
 -- respective styles. When disabled, all highlights will be cleared.
 vim.api.nvim_create_user_command("NoticeMeToggle", function()
-  local notice_me = require("notice-me")
+  local notice_me = require("notice_me")
   notice_me.config.enable = not notice_me.config.enable
 
   if notice_me.config.enable then
@@ -34,13 +35,14 @@ vim.api.nvim_create_user_command("NoticeMeToggle", function()
     end
     vim.notify("Keyword highlighting disabled")
   end
-end, { desc = "Toggle notice-me keyword highlighting" })
+end, { desc = "Toggle notice_me keyword highlighting" })
+
 
 -- Add command to refresh highlights
 vim.api.nvim_create_user_command("NoticeMeRefresh", function()
-  local notice_me = require("notice-me")
+  local notice_me = require("notice_me")
   if not notice_me.config.enable then
-    vim.notify("Notice-me is disabled, enable it first with :NoticeMeToggle")
+    vim.notify("Notice_me is disabled, enable it first with :NoticeMeToggle")
     return
   end
 
